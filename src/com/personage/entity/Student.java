@@ -4,14 +4,16 @@ public class Student {
     private int sid;
     private String sname;
     private int sage;
+    private String ssex;
 
     public Student() {
     }
 
-    public Student(int sid, String sname, int sage) {
+    public Student(int sid, String sname, int sage,String ssex) {
         this.sid = sid;
         this.sname = sname;
         this.sage = sage;
+        this.ssex=ssex;
     }
 
     public int getSid() {
@@ -36,5 +38,13 @@ public class Student {
 
     public void setSage(int sage) {
         this.sage = sage;
+    }
+
+    public String getSsex() {
+        return ssex;
+    }
+
+    public void setSsex(String ssex) {
+        this.ssex = ssex;
     }
 }
